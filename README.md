@@ -1,4 +1,4 @@
-# junior-front-end
+# front-end
 
 ### Installation
 ```
