@@ -19,5 +19,5 @@ app.get('/', (req, res) => {
 app.use(express.static(path.join(__dirname, 'assets')));
 
 app.listen(port, () => {
-  console.log(`Junior Front end Developer app listening at http://localhost:${port}`)
+  console.log(`Front end Developer app listening at http://localhost:${port}`)
 })
