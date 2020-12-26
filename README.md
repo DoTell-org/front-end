@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Front-end developer task
-=======
-# front-end
->>>>>>> a968d16f7ef61db1cb6736432a2070ebeb058b37
 
 ### Installation
 ```
