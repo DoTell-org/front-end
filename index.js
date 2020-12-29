@@ -3,10 +3,7 @@ const app = express()
 const port = 3001
 const handlebars = require('./handlebars');
 var path = require('path');
-
-const defaultData = {
-  foo: 'bar'
-}
+const defaultData = require('./default-data');
 
 app.get('/', (req, res) => {
   const data = {
