@@ -1,14 +1,30 @@
 # Front-end developer task
 
+### Prerequisites
+#### Node.js
+https://nodejs.org/en/download/
+
+Test installation
+```
+node -v
+npm -v
+```
+
 ### Installation
 ```
 npm i
 npm start
 ```
-Navigate to http://localhost:3001/?foo=YOUR%20NAME%20HERE
+Navigate to http://localhost:3001/
 
-### Templating language
-Handlebars
+### Files structure
+index.js - Server logic
+handlebars.js - Templating language logic
+default-data.js - Dynamic component default values
+layout.html - Main html page that supports templating language syntax
+assets - Static assets folder to be served under http://localhost:3001/assets/
+
+### Templating language - Handlebars
 https://github.com/handlebars-lang/handlebars.js
 
 # Task

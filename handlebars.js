@@ -1,6 +1,5 @@
 const Handlebars = require("handlebars");
 const fs = require('fs');
-const html = fs.readFileSync('./layout.html', 'utf8');
 
 // Helpers
 Handlebars.registerHelper('and', function(v1, v2, options) {
@@ -22,7 +21,10 @@ Handlebars.registerHelper('lt',function(v1, v2, options){
   return v1 < v2;
 });
 
-const template = Handlebars.compile(html);
+const template = () => {
+  const html = fs.readFileSync('./layout.html', 'utf8');
+  return Handlebars.compile(html);
+}
 
 module.exports = {
   template,

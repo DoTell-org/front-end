@@ -10,7 +10,8 @@ app.get('/', (req, res) => {
     ...defaultData,
     ...req.query
   };
-  res.send(handlebars.template(data))
+  const template = handlebars.template();
+  res.send(template(data));
 })
 
 app.use(express.static(path.join(__dirname, 'assets')));
